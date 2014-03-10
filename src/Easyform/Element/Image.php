@@ -1,18 +1,18 @@
 <?php
 namespace Easyform;
 
-class ElementPassword extends Element
+use Easyform\Element;
+
+class Image extends Element
 {
     public function render()
     {
         $output  = $this->renderLabel();
-        $output .= '<div class="controls">' . "\n";
-        $output .= '<input type="password"';
+        $output .= '<input type="image"';
         $output .= $this->renderAllAttributes();
         $output .= $this->renderValue();
         $output .= ' />';
         $output .= $this->renderHelp();
-        $output .= '</div>' . "\n";
         
         return $output;
     }

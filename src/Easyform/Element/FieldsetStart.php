@@ -1,11 +1,13 @@
 <?php
 namespace Easyform;
 
-class ElementSeparator extends Element
+use Easyform\Element;
+
+class FieldsetEnd extends Element
 {
     public function render()
     {
-        $output  = '<hr/>';
+        $output  = '</fieldset>';
 
         return $output;
     }

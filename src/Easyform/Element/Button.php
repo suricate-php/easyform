@@ -1,7 +1,9 @@
 <?php
-namespace Easyform;
+namespace Easyform\Element;
 
-class ElementButton extends Element
+use Easyform\Element;
+
+class Button extends Element
 {
     public function __construct($item_data)
     {

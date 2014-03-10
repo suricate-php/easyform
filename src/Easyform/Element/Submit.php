@@ -1,7 +1,9 @@
 <?php
 namespace Easyform;
 
-class ElementSubmit extends Element
+use Easyform\Element;
+
+class Submit extends Element
 {
     public function __construct($item_data)
     {

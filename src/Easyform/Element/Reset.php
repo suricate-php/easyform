@@ -1,12 +1,14 @@
 <?php
 namespace Easyform;
 
-class ElementImage extends Element
+use Easyform\Element;
+
+class Reset extends Element
 {
     public function render()
     {
         $output  = $this->renderLabel();
-        $output .= '<input type="image"';
+        $output .= '<input type="reset"';
         $output .= $this->renderAllAttributes();
         $output .= $this->renderValue();
         $output .= ' />';

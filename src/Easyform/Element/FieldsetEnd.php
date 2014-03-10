@@ -1,7 +1,9 @@
 <?php
 namespace Easyform;
 
-class ElementFieldsetStart extends Element
+use Easyform\Element;
+
+class FieldsetStart extends Element
 {
     public function render()
     {

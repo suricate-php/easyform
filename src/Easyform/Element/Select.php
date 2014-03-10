@@ -1,7 +1,9 @@
 <?php
 namespace Easyform;
 
-class ElementSelect extends Element
+use Easyform\Element;
+
+class Select extends Element
 {
     public function __construct($item_data)
     {

@@ -1,19 +1,21 @@
 <?php
 namespace Easyform;
 
-class ElementText extends Element
+use Easyform\Element;
+
+class Textarea extends Element
 {
     public function render()
     {
         $output  = $this->renderLabel();
         $output .= '<div class="controls">' . "\n";
-        $output .= '<input type="text"';
+        $output .= '<textarea';
         $output .= $this->renderAllAttributes();
-        $output .= $this->renderValue();
-        $output .= ' />';
+        $output .= ' >';
+        $output .= $this->renderValue(true);
+        $output .= '</textarea>';
         $output .= $this->renderHelp();
         $output .= '</div>' . "\n";
-
         return $output;
     }
 }

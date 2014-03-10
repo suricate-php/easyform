@@ -1,7 +1,9 @@
 <?php
 namespace Easyform;
 
-class ElementCustom extends Element
+use Easyform\Element;
+
+class Custom extends Element
 {
     public function render()
     {

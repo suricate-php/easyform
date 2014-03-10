@@ -1,7 +1,9 @@
 <?php
 namespace Easyform;
 
-class ElementFile extends Element
+use Easyform\Element;
+
+class File extends Element
 {
     public function __construct($item_data)
     {

@@ -1,7 +1,9 @@
 <?php
 namespace Easyform;
 
-class ElementCheck extends Element
+use Easyform\Element;
+
+class Check extends Element
 {
     public function __construct($item_data)
     {

@@ -1,7 +1,9 @@
 <?php
 namespace Easyform;
 
-class ElementHidden extends Element
+use Easyform\Element;
+
+class Hidden extends Element
 {
     public function render()
     {
