@@ -3,7 +3,7 @@ namespace Easyform;
 
 use Easyform\Element;
 
-class Check extends Element
+class Checkbox extends Element
 {
     public function __construct($item_data)
     {
