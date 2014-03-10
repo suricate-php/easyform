@@ -1,7 +1,7 @@
 <?php
-namespace EasyForm;
+namespace Easyform;
 
-class EasyForm
+class Easyform
 {
     const INPUT_TEXT        = 1;
     const INPUT_CHECK       = 2;

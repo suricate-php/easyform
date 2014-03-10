@@ -1,5 +1,5 @@
 <?php
-namespace EasyForm;
+namespace Easyform;
 
 class ElementRadio extends Element
 {

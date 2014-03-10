@@ -1,5 +1,5 @@
 <?php
-namespace EasyForm;
+namespace Easyform;
 
 class ElementFieldsetEnd extends Element
 {
