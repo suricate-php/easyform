@@ -1,5 +1,5 @@
 <?php
-namespace Easyform;
+namespace Easyform\Element;
 
 use Easyform\Element;
 
