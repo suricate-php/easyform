@@ -32,7 +32,7 @@ class Easyform
     const BUTTONSTYPE_NONE      = 2;
     const BUTTONSTYPE_SUBMIT    = 3;
 
-    static public $formEncoding = 'ISO-8859-1';
+    static public $formEncoding = 'UTF-8';
 
     public $items;
     public $name;
