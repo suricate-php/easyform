@@ -1,0 +1,32 @@
+.easyform-dropzone {
+	box-shadow : inset 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border : 4px dashed #bb2b2b; 
+	width: 100px; 
+	height: 100px;
+	text-align: center;
+}
+
+.easyform-upload-preview {
+
+}
+
+.easyform-upload-preview .progress {
+	display: none;
+}
+
+.easyform-upload-preview .uploaded-item-preview {
+	border-bottom: solid 1px #CCC;
+	padding: 5px;
+}
+
+.easyform-upload-preview .uploaded-item-preview IMG {
+	width: 200px;
+	float: left;
+}
+.easyform-upload-preview .uploaded-item-preview SPAN {
+	display: block;
+}
+
+.easyform-upload-preview .uploaded-item-preview .breaker {
+	clear: both;
+}

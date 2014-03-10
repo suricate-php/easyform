@@ -1,0 +1,21 @@
+{
+    "name": "suricate-php/easyform",
+    "description": "Suricate PHP form manipulations",
+    "keywords": ["php", "forms", "suricate"],
+    "authors": [
+        {
+            "name": "Mathieu LESNIAK",
+            "email": "mathieu@lesniak.fr"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Easyform": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">= 5.4.0"
+    }
+
+}
