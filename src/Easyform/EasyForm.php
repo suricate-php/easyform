@@ -55,7 +55,7 @@ class Easyform
         $this->name         = $name;
 
         // Use provided datasource, otherwise, create a dummy one
-        $this->datasource         = ( $datasource == null) ? new DataSource() : $datasource;
+        $this->datasource         = ($datasource == null) ? new DataSource() : $datasource;
         $this->formType           = self::FORM_TYPE_CLASSIC;
         $this->formMethod         = self::METHOD_POST;
         $this->buttonsType        = self::BUTTONSTYPE_BOTH;
@@ -108,10 +108,10 @@ class Easyform
     {
         switch ($item['type']) {
             case self::INPUT_TEXT:
-                $itemToAdd = new ElementText($item);
+                $itemToAdd = new Element\Text($item);
                 break;
             case self::INPUT_CHECK:
-                $itemToAdd = new ElementCheck($item);
+                $itemToAdd = new Element\Checkbox($item);
                 break;
             case self::INPUT_SELECT:
                 if (!isset($item['possibleValues'])) {
@@ -121,49 +121,49 @@ class Easyform
                         $item['possibleValues'] = array();
                     }
                 }
-                $itemToAdd = new ElementSelect($item);
+                $itemToAdd = new Element\Select($item);
                 break;
             case self::INPUT_RADIO:
-                $itemToAdd = new ElementRadio($item);
+                $itemToAdd = new Element\Radio($item);
                 break;
             case self::INPUT_FILE:
-                $itemToAdd = new ElementFile($item);
+                $itemToAdd = new Element\File($item);
                 break;
             case self::INPUT_RESET:
-                $itemToAdd = new ElementReset($item);
+                $itemToAdd = new Element\Reset($item);
                 break;
             case self::INPUT_PASSWORD:
-                $itemToAdd = new ElementPassword($item);
+                $itemToAdd = new Element\Password($item);
                 break;
             case self::INPUT_IMAGE:
-                $itemToAdd = new ElementImage($item);
+                $itemToAdd = new Element\Image($item);
                 break;
             case self::INPUT_TEXTAREA:
-                $itemToAdd = new ElementTextarea($item);
+                $itemToAdd = new Element\Textarea($item);
                 break;
             case self::INPUT_SUBMIT:
-                $itemToAdd = new ElementSubmit($item);
+                $itemToAdd = new Element\Submit($item);
                 break;
             case self::INPUT_HIDDEN:
-                $itemToAdd = new ElementHidden($item);
+                $itemToAdd = new Element\Hidden($item);
                 break;
             case self::INPUT_BUTTON:
-                $itemToAdd = new ElementButton($item);
+                $itemToAdd = new Element\Button($item);
                 break;
             case self::SEPARATOR:
-                $itemToAdd = new ElementSeparator($item);
+                $itemToAdd = new Element\Separator($item);
                 break;
             case self::FIELDSET_START:
-                $itemToAdd = new ElementFieldsetStart($item);
+                $itemToAdd = new Element\FieldsetStart($item);
                 break;
             case self::FIELDSET_END:
-                $itemToAdd = new ElementFieldsetEnd($item);
+                $itemToAdd = new Element\FieldsetEnd($item);
                 break;
             case self::INPUT_CUSTOM:
-                $itemToAdd = new ElementCustom($item);
+                $itemToAdd = new Element\Custom($item);
                 break;
             default:
-                $itemToAdd = new ElementText($item);
+                $itemToAdd = new Element\Text($item);
                 break;
         }
 
