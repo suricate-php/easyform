@@ -260,7 +260,7 @@ class Easyform
                 'value' => 'Valider',
                 'class' => 'btn-primary'
                 );
-            $itemToAdd = new ElementSubmit($itemData);
+            $itemToAdd = new Element\Submit($itemData);
             $output .= $itemToAdd->render();
 
             if ($this->buttonsType != self::BUTTONSTYPE_SUBMIT) {
@@ -269,7 +269,7 @@ class Easyform
                     'value' => 'Annuler',
                     'events' => array('onclick' => 'history.go(-1);return false')
                 );
-                $itemToAdd = new ElementButton($itemData);
+                $itemToAdd = new Element\Button($itemData);
                 $output .= $itemToAdd->render();
             }
             $output .= '    </div>'."\n";
